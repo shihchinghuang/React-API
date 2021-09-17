@@ -41,9 +41,7 @@ const HomePage = () => {
   return (
     <>
       <div className="section">
-        <h1>串接 PEXEL API</h1>
         <Create search={search} />
-        <div></div>
         <div className="pictures">
           {/* 如果直接用 map，因為 data 是 null，會報錯，所以先設定一個條件，data 是 null 時都不會進行 map，直到按下 search 啟動，才會出現 */}
           {data &&

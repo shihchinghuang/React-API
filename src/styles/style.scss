@@ -18,32 +18,10 @@
     background: linear-gradient(to top, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
   }
-.section{
-margin: auto;
-text-align: center;
-min-height: 100vh;
-
-}
-
-.allTweets{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    .tweet{
-        background-color: #FFD792;
-        width: 250px;
-        height: 250px;
-        border-radius: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        margin: 30px;
-        color: red;
-    }
-  
-}
 
 @import "./nav";
 @import "./search";
 @import "./footer";
+@import "./loading";
+@import "./card";
+@import "./create";

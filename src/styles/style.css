@@ -19,43 +19,6 @@ body {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.section {
-  margin: auto;
-  text-align: center;
-  min-height: 100vh;
-}
-
-.allTweets {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.allTweets .tweet {
-  background-color: #FFD792;
-  width: 250px;
-  height: 250px;
-  border-radius: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 30px;
-  color: red;
-}
-
 nav {
   background-color: #261808;
 }
@@ -107,5 +70,77 @@ footer {
   background-color: #261808;
   padding: 20px;
   color: #FFCA64;
+}
+
+.loading {
+  height: 80vh;
+  text-align: center;
+}
+
+.loading h3 {
+  padding-top: 50px;
+  color: #261808;
+}
+
+.loading img {
+  width: 30%;
+  min-width: 300px;
+  padding-top: 50px;
+}
+
+.pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 70%;
+}
+
+.pictures .picture {
+  width: 300px;
+  height: 400px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.pictures .picture .word p {
+  color: #261808;
+}
+
+.pictures .picture .word a {
+  color: #261808;
+  text-decoration: none;
+}
+
+.pictures .picture .word a:hover {
+  color: #5BB2A6;
+}
+
+.pictures .picture .img {
+  overflow: hidden;
+}
+
+.pictures .picture .img img {
+  width: 300px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
+}
+
+.pictures .picture .img img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.create {
+  text-align: center;
+  margin: 50px 0;
 }
 /*# sourceMappingURL=style.css.map */
