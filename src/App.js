@@ -12,7 +12,7 @@ function App() {
       <Nav />
       <Switch>
         {/* exact 代表一定要符合 path */}
-        <Route path="/" exact>
+        <Route path="/React-API/" exact>
           <HomePage />
         </Route>
         <Route path="/about" exact>
