@@ -4,7 +4,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #261808;
 }
 
 body {
@@ -23,28 +22,7 @@ body {
 .section {
   margin: auto;
   text-align: center;
-  margin: 50px;
-}
-
-.section input {
-  outline: none;
-  width: 300px;
-  height: 40px;
-  margin: 30px 10px;
-  padding: 15px;
-  border: none;
-  border-radius: 50px;
-}
-
-.section button {
-  width: 100px;
-  height: 40px;
-  padding: 15px;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  background-color: #5BB2A6;
-  color: #E7E4DC;
+  min-height: 100vh;
 }
 
 .allTweets {
@@ -78,7 +56,56 @@ body {
   color: red;
 }
 
-.red {
-  color: red;
+nav {
+  background-color: #261808;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+nav ul a {
+  padding: 20px;
+  -webkit-transition: .5 ease all;
+  transition: .5 ease all;
+  color: #FFCA64;
+}
+
+nav ul a:hover {
+  background-color: #FFCA64;
+  text-decoration: none;
+  color: #261808;
+}
+
+input {
+  outline: none;
+  width: 300px;
+  height: 40px;
+  margin: 30px 10px;
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #5BB2A6;
+  color: #261808;
+}
+
+footer {
+  background-color: #261808;
+  padding: 20px;
+  color: #FFCA64;
 }
 /*# sourceMappingURL=style.css.map */

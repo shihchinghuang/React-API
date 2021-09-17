@@ -1,16 +1,17 @@
 import React from 'react';
-import Message from './Message';
 
-function Card({ msg, setMsg }) {
+const Card = ({ data, loading }) => {
   return (
-    <>
-      <div className="allTweets">
-        {msg.map((singleMsg) => (
-          <Message singleMsg={singleMsg} />
-        ))}
+    <div>
+      <div className="picture">
+        <p>{data.photographer}</p>
+        <img src={data.src.large} alt="" />
+        <a target="_blank" href={data.src.large} rel="noreferrer">
+          download
+        </a>
       </div>
-    </>
+    </div>
   );
-}
+};
 
 export default Card;

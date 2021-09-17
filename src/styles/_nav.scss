@@ -1,0 +1,20 @@
+nav{
+    background-color: #261808;
+
+    ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+a{
+    padding: 20px;
+    transition: .5 ease all;
+    color: #FFCA64;
+    &:hover{
+    background-color: #FFCA64;
+    text-decoration: none;
+    color: #261808;
+    }
+}
+}
+}
