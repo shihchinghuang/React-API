@@ -66,6 +66,12 @@ button {
   color: #261808;
 }
 
+button:hover {
+  background-color: #FFCA64;
+  border: #5BB2A6 3px solid;
+  color: #261808;
+}
+
 footer {
   background-color: #261808;
   padding: 20px;
@@ -141,6 +147,23 @@ footer {
 
 .create {
   text-align: center;
-  margin: 50px 0;
+  margin: 50px 0 0 0;
+}
+
+.create input {
+  padding: 20px;
+}
+
+.category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.category button {
+  margin: 0 20px 50px 20px;
 }
 /*# sourceMappingURL=style.css.map */

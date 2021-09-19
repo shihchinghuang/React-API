@@ -1,16 +1,11 @@
 import React from 'react';
 
-const Category = ({ categoryButton, search, cakeURL, dogURL, catURL }) => {
+const Category = ({ v, search }) => {
   return (
-    <div>
-      <button
-        onClick={() => {
-          search(`{categoryButton}URL`);
-        }}
-      >
-        {categoryButton}
-      </button>
-    </div>
+    // div class category 在 homepage
+    <>
+      <button onClick={search}>{v}</button>
+    </>
   );
 };
 

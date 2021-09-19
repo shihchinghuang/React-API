@@ -14,5 +14,11 @@ button{
     border-radius: 50px;
     cursor: pointer;
     background-color: #5BB2A6;
-    color: #261808;
+    color:#261808;
+    &:hover{
+        background-color: #FFCA64;
+        border: #5BB2A6 3px solid;
+        color: #261808;
+
+    }
 }

@@ -9,12 +9,11 @@ const HomePage = () => {
   const [input, setInput] = useState('');
   let [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
+
   const key = '563492ad6f91700001000001e29189a8073847c1af5449418a3579c9';
   const initialURL = 'https://api.pexels.com/v1/curated?page=1&per_page=15';
   const searchURL = `https://api.pexels.com/v1/search?query=${input}&per_page=15&page=1`;
-  const cakeURL = `https://api.pexels.com/v1/search?query=cake&per_page=15&page=1`;
-  const dogURL = `https://api.pexels.com/v1/search?query=dog&per_page=15&page=1`;
-  const catURL = `https://api.pexels.com/v1/search?query=cat&per_page=15&page=1`;
+
   const categoryButton = ['cake', 'dog', 'cat'];
 
   // fetch data from API
@@ -28,13 +27,20 @@ const HomePage = () => {
     });
     let parseData = await fecthData.json();
     setData(parseData.photos);
-    console.log(parseData.photos);
     setLoading(false);
+    // setInput(input); 想嘗試送出表單輸入框為空
   };
+
+  // const enter = (e) => {
+  //   if (e.keyCode === 13) {
+  //     e.preventDefault();
+  //     console.log('ss');
+  //     search(searchURL);
+  //   }
+  // };
 
   // fetch data when the page loads up
   useEffect(() => {
-    console.log(loading);
     search(initialURL);
     setLoading(true);
   }, []);
@@ -46,26 +52,37 @@ const HomePage = () => {
   return (
     <>
       <div className="section">
+        {/* 標題及搜尋框 */}
         <Create
           search={() => {
             search(searchURL);
           }}
           input={input}
           setInput={setInput}
+          // enter={() => {
+          //   enter();
+          // }}
         />
 
-        {categoryButton.map((v, i) => {
-          return (
-            <Category
-              cakeURL={cakeURL}
-              dogURL={dogURL}
-              catURL={catURL}
-              search={search}
-              i={categoryButton.i}
-            />
-          );
-        })}
+        {/* 分類按鈕 */}
+        <p style={{ textAlign: 'center' }}>try these categories ⬇ </p>
+        <div className="category">
+          {categoryButton.map((v, i) => {
+            return (
+              <Category
+                v={v}
+                i={categoryButton.i}
+                search={() => {
+                  search(
+                    `https://api.pexels.com/v1/search?query=${v}}&per_page=15&page=1`
+                  );
+                }}
+              />
+            );
+          })}
+        </div>
 
+        {/* 搜尋結果 */}
         <div className="pictures">
           {/* 如果直接用 map，因為 data 是 null，會報錯，所以先設定一個條件，data 是 null 時都不會進行 map，直到按下 search 啟動，才會出現 */}
           {data &&
