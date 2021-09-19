@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/React-API/static/css/main.e611063a.chunk.css",
-    "main.js": "/React-API/static/js/main.0ba1029b.chunk.js",
-    "main.js.map": "/React-API/static/js/main.0ba1029b.chunk.js.map",
+    "main.css": "/React-API/static/css/main.c520eeed.chunk.css",
+    "main.js": "/React-API/static/js/main.3988dddf.chunk.js",
+    "main.js.map": "/React-API/static/js/main.3988dddf.chunk.js.map",
     "runtime-main.js": "/React-API/static/js/runtime-main.a0e93eb7.js",
     "runtime-main.js.map": "/React-API/static/js/runtime-main.a0e93eb7.js.map",
     "static/js/2.fc968cd7.chunk.js": "/React-API/static/js/2.fc968cd7.chunk.js",
     "static/js/2.fc968cd7.chunk.js.map": "/React-API/static/js/2.fc968cd7.chunk.js.map",
     "index.html": "/React-API/index.html",
-    "static/css/main.e611063a.chunk.css.map": "/React-API/static/css/main.e611063a.chunk.css.map",
+    "static/css/main.c520eeed.chunk.css.map": "/React-API/static/css/main.c520eeed.chunk.css.map",
     "static/js/2.fc968cd7.chunk.js.LICENSE.txt": "/React-API/static/js/2.fc968cd7.chunk.js.LICENSE.txt",
     "static/media/undraw_Dog_walking_re_l61p.41cb1049.svg": "/React-API/static/media/undraw_Dog_walking_re_l61p.41cb1049.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.a0e93eb7.js",
     "static/js/2.fc968cd7.chunk.js",
-    "static/css/main.e611063a.chunk.css",
-    "static/js/main.0ba1029b.chunk.js"
+    "static/css/main.c520eeed.chunk.css",
+    "static/js/main.3988dddf.chunk.js"
   ]
 }
