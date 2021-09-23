@@ -1,7 +1,21 @@
 .category{
     display: flex;
-justify-content: center;
+    justify-content: center;
     button{
-    margin: 0 20px 50px 20px;
-    }
+        margin: 0 20px 50px 20px;
+        width: 100px;
+        height: 40px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        background-color: #5BB2A6;
+        color:#261808;
+        outline: none;
+
+        &:hover{
+            background-color: #FFCA64;
+            border: #5BB2A6 2px solid;
+            color: #261808;
+        }
+        }
 }

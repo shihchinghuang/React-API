@@ -28,7 +28,7 @@ const HomePage = () => {
     let parseData = await fecthData.json();
     setData(parseData.photos);
     setLoading(false);
-    // setInput(input); 想嘗試送出表單輸入框為空
+    console.log(data);
   };
 
   // const enter = (e) => {
@@ -65,13 +65,15 @@ const HomePage = () => {
         />
 
         {/* 分類按鈕 */}
-        <p style={{ textAlign: 'center' }}>try these categories ⬇ </p>
+        <p style={{ textAlign: 'center', color: '#261808' }}>
+          try these categories ⬇
+        </p>
         <div className="category">
           {categoryButton.map((v, i) => {
             return (
               <Category
                 v={v}
-                i={categoryButton.i}
+                i={i}
                 search={() => {
                   search(
                     `https://api.pexels.com/v1/search?query=${v}}&per_page=15&page=1`
@@ -87,7 +89,7 @@ const HomePage = () => {
           {/* 如果直接用 map，因為 data 是 null，會報錯，所以先設定一個條件，data 是 null 時都不會進行 map，直到按下 search 啟動，才會出現 */}
           {data &&
             data.map((photo, i) => {
-              return <Card data={photo} i={photo.i} />;
+              return <Card data={photo} i={i} />;
             })}
         </div>
       </div>

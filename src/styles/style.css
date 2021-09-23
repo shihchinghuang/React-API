@@ -4,6 +4,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-weight: 300;
 }
 
 body {
@@ -43,32 +44,6 @@ nav ul a {
 nav ul a:hover {
   background-color: #FFCA64;
   text-decoration: none;
-  color: #261808;
-}
-
-input {
-  outline: none;
-  width: 300px;
-  height: 40px;
-  margin: 30px 10px;
-  padding: 15px;
-  border: none;
-  border-radius: 50px;
-}
-
-button {
-  width: 100px;
-  height: 40px;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  background-color: #5BB2A6;
-  color: #261808;
-}
-
-button:hover {
-  background-color: #FFCA64;
-  border: #5BB2A6 3px solid;
   color: #261808;
 }
 
@@ -150,8 +125,36 @@ footer {
   margin: 50px 0 0 0;
 }
 
+.create h1 {
+  color: #261808;
+  font-weight: 200;
+}
+
 .create input {
+  outline: none;
+  width: 300px;
+  height: 40px;
+  margin: 30px 10px;
   padding: 20px;
+  border: none;
+  border-radius: 50px;
+}
+
+.create button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #5BB2A6;
+  color: #261808;
+  outline: none;
+}
+
+.create button:hover {
+  background-color: #FFCA64;
+  border: #5BB2A6 2px solid;
+  color: #261808;
 }
 
 .category {
@@ -165,5 +168,57 @@ footer {
 
 .category button {
   margin: 0 20px 50px 20px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #5BB2A6;
+  color: #261808;
+  outline: none;
+}
+
+.category button:hover {
+  background-color: #FFCA64;
+  border: #5BB2A6 2px solid;
+  color: #261808;
+}
+
+.about {
+  width: 100%;
+}
+
+.about .data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 350px;
+  padding: 16vh 0;
+}
+
+.about .data h1 {
+  font-weight: 100;
+  color: #261808;
+}
+
+.about .data h1 a {
+  color: #261808;
+  border-bottom: #FFCA64 8px solid;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.about .data h1 a:hover {
+  color: #5BB2A6;
+  border: none;
+}
+
+.about .data img {
+  height: 50%;
 }
 /*# sourceMappingURL=style.css.map */

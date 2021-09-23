@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight: 300;
   }
   
   body {
@@ -20,9 +21,9 @@
   }
 
 @import "./nav";
-@import "./search";
 @import "./footer";
 @import "./loading";
 @import "./card";
 @import "./create";
 @import "./category";
+@import "./about";
